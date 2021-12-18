@@ -12,10 +12,9 @@ jobs:
     - name: Downloading ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Hsuhs8hshheuuw/
-rdpforlifetime/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Hsuhs8hshheuuw/rdpforlifetime/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Hsuhs8hshheuuw/rdpforlifetime/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/rebarmhamad/rdpshet/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/rebarmhamad/rdpshet/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/rebarmhamad/rdpshet/main/loop.bat -OutFile loop.bat
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect via ngrok.
@@ -39,3 +38,10 @@ rdpforlifetime/main/start.bat -OutFile start.bat
       run: cmd /c start.bat
     - name: Success! You may now close this tab.
       run: cmd /c loop.bat
+
+
+
+
+
+
+
